@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    username: ec2_aws
+    password: test
+    url: jdbc:postgresql://localhost:3306/EC2_AWS_DB
+    
