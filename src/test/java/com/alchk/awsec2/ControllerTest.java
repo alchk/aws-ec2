@@ -38,6 +38,6 @@ public class ControllerTest {
         Mockito.when(this.dummyJpaRepository.findAll()).thenReturn(List.of());
 
         this.mockMvc.perform(get("/main/dummy"))
-                .andExpect(status().isCreated());
+                .andExpect(status().isOk());
     }
 }
