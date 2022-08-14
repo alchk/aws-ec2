@@ -1,6 +1,5 @@
 name: execute_test_workflow
 on:
-    push:
     pull_request:
       branches:
         - main
