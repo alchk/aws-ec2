@@ -13,10 +13,9 @@ import java.util.List;
 @RequiredArgsConstructor
 public class MainController {
 
-    private final DummyJpaRepository dummyJpaRepository;
 
     @GetMapping(value = "/dummy")
-    public ResponseEntity<List<DummyEntity>> getAllDummies() {
-        return ResponseEntity.ok(dummyJpaRepository.findAll());
+    public ResponseEntity<List<String>> getAllDummies() {
+        return ResponseEntity.ok(List.of("Hi", "Hello", "Lol"));
     }
 }
